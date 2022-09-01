@@ -1,0 +1,39 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap-grid";
+
+
+
+.hero-starter{
+   
+    img{
+        background-size: cover;
+        width: 100%;
+
+    }
+    @include media-breakpoint-up(lg){
+        position: relative;
+        img{
+           
+        }
+        .hero-content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background-color: $wintergreen-dream;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+}
+
+.blog-preview{
+   
+    h3{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
